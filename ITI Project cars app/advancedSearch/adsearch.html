@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advanced Search Page</title>
+        <link rel="stylesheet" href="adsearchstyle.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            &nbsp;
+            &nbsp;
+            <!-- <div><img src="../logo.PNG" alt="diwa drift Logo" width="70px" style="border-radius: 20px;"></div> -->
+            <div style="text-align: center;" ><a href="../advancedSearch/adsearch.html"> <img src="../logo.PNG" width="170px" style="border-radius: 70%;"></a>
+            </div>
+        </header>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <nav>
+          <div class="btn-group" style="width:100%; display: inline;">
+            <a href="../advancedSearch/adsearch.html"><button style="width:24.77%; font-size:16px">ِِِHome</button></a>
+            <!-- <a href="adsearch.html"><button style="width:24.77%; font-size:16px">Advanced Search</button></a> -->
+            <a href="../compare/compare.html"><button style="width:24.77%; font-size:16px">Compare</button></a> 
+            <a href="#fotr"><button style="width:24.77%; font-size:16px">About Us</button></a>
+            
+          </div>
+        </nav>
+        <div class="heado">
+        <h1>Find Your Dream Car</h1>
+        </div>
+        <div class="fromS">
+        <!-- Making the form that will sumbit us to the list page of the cars with the search options -->
+        <form action="../advancedSearch/list.html" method="GET">
+            <!-- list search with the cars type -->
+            <label for="adSearchI" class="labels">Car Type</label>
+            <input list="adSearch" id="adSearchI" name="car" class="inputS">
+            <datalist id="adSearch"> 
+                <option value="Toyota"></option>
+                <option value="BMW"></option>
+                
+            </datalist>
+            <br>
+            <!-- input type with the price -->
+            <label for="bud" class="labels">Budget</label >
+            <input type="number" id="bud" name="budget" class="inputS">
+            <br>
+
+            <!-- list type with shape -->
+            <label for="sha" class="labels" style="display: block;">Shape</label>
+            <select name="shape" id="sha" class="inputS">
+                <option value="all">All</option>
+                <option value="sedan">Sedan</option>
+                <option value="Hatchback">Hatchback</option>
+            </select>
+            <br>
+            <!-- list type with tranmmission -->
+            <label for="tra" class="labels" style="display: block;">Transmission</label>
+            <select name="trans" id="tra" class="inputS">
+                <option value="all">All</option>
+                <option value="Automatic">Automatic</option>
+                <option value="Manual">Manual</option>
+            </select>
+            
+            <br>
+            <button type="submit" class="btn" id="go">GO</button>
+        </form>
+
+    </div>
+
+    <footer id="footer">
+        &nbsp;
+        &nbsp;
+        <div id="fotr">
+            <h3 id="abth">About Us</h3>
+            <p id="abtp">
+                This Website has been made by ( Group 7) .Net WebDevelopment Track in ITI Minya Branch
+            </p>
+
+        <div id="soc"><a href="https://linkedin.com" target="_blank"><img src="../PreviewPage/images/linkedin.webp" width="40px"></a> &nbsp;
+            <a href="https://facebook.com" target="_blank"><img src="../PreviewPage/images/facebook.png" width="40px"></a> &nbsp;
+            <a href="https://twitter.com" target="_blank"><img src="../PreviewPage/images/twitter.webp" width="40px"></a> &nbsp;
+            <a href="https://www.instagram.com" target="_blank"><img src="../PreviewPage/images/insta.png" width="41px"></a> &nbsp;
+            <a href="https://www.youtube.com" target="_blank"><img src="../PreviewPage/images/yt.png" width="41px"></a></div>
+            
+        </div>
+        
+        <div id="links">
+            <h4>Other Links</h4>
+            <a href="../advancedSearch/adsearch.html" >Home</a><br><br>
+            <a href="../compare/compare.html">Compare</a><br><br>
+            <a href="../loginPage/login.html">Login</a>
+        </div>
+        <div style="text-align: center;">
+          <div>
+            <!-- <img src="https://www.carsprite.com/storage/img/logo-white.png" width="152px" height="100px"> -->
+            <div style="text-align: center;" ><a href="../advancedSearch/adsearch.html"> <img src="../logo.PNG" width="250px" style="border-radius: 70%;"></a>
+            <p>
+              You will find any car you are looking for! We provide the latest prices<br> and specifications for all new cars in Egypt
+            </p>
+          </div>
+        </div>
+        &nbsp;
+        &nbsp;
+        <div style="text-align: center;">
+          
+          <img width="40px" src="../PreviewPage/images/pijo.png">&nbsp;&nbsp;
+          <img width="40px" src="../PreviewPage/images/toy.png">&nbsp;&nbsp;<img width="50px" src="../PreviewPage/images/ford.png">&nbsp;&nbsp;<img width="50px" src="../PreviewPage/images/audi.png">
+          <h5>Copyright &copy; 2021 All Rights Reserved</h5>
+        </div>
+
+
+       
+        <!-- <button onclick="jsonArray()">push</button> -->
+        <script src="java.js"></script>
+    </body>
+</html>
